@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蔡景勛 - 作品集</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+      <div class="loading-content">
+        <div class="loading-spinner loading-effect-1"></div>
+        <span class="loading-text">載入中</span>
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="brand">作品集</div>
+      <button class="theme-toggle" id="themeToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <nav class="nav" id="navMenu">
+        <span class="active" data-tab="home">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          關於我
+        </span>
+        <span data-tab="gallery">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          作品
+        </span>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="profile fade-slide">
+        <div class="profile-top">
+          <img src="https://i.imgur.com/fmmftUH.jpeg" alt="蔡景勛" class="profile-img" loading="lazy">
+          <div class="profile-intro">
+            <h1>蔡景勛</h1>
+            <p class="title">平面設計 & AI程式開發愛好者 & 學生</p>
+            <p class="intro-text">一個熱衷於設計與技術的高中生，專注於打造直觀又美觀的界面。</p>
+          </div>
+        </div>
+        <div class="profile-content">
+          <div class="bio-section">
+            <h2>關於我</h2>
+            <p>目前就讀廣告設計科。因為從小喜歡畫圖，對設計有興趣，所以選擇這個科系，希望學會更多實用的技能。在學校學了 Photoshop、Illustrator 這些設計軟體，做過海報、LOGO 之類的作品。我喜歡簡單但有重點的設計，讓人一看就懂。平常也會注意生活中的廣告，觀察別人的設計，學習新的想法。除了設計，我也喜歡聽音樂、看電影，特別是視覺效果很強的作品，覺得這些東西能帶給我靈感。偶爾也會玩遊戲，對 UI 設計很感興趣，覺得未來也許可以朝這方面發展。希望能在課堂上學到更多，提升自己的設計能力，也期待有機會參加實作，累積經驗。請多指教！(｡･∀･)ﾉﾞ</p>
+          </div>
+          <div class="profile-cards">
+            <div class="card"><h3>年齡</h3><p>17歲</p></div>
+            <div class="card"><h3>學歷</h3><p>明德高中廣告設計科</p></div>
+            <div class="card"><h3>專長</h3><p>平面設計</p></div>
+            <div class="card"><h3>興趣</h3><p>設計 聽音樂 吃東西 程式開發</p></div>
+          </div>
+          <h2 class="tools-title">我擅長的工具</h2>
+          <div class="tools-cards">
+            <div class="tool-card"><img src="https://i.imgur.com/4E7iEGW.png" alt="Photoshop" class="tool-icon" loading="lazy"><span class="tool-name">Photoshop</span></div>
+            <div class="tool-card"><img src="https://i.imgur.com/BB4bWQ7.png" alt="Illustrator" class="tool-icon" loading="lazy"><span class="tool-name">Illustrator</span></div>
+            <div class="tool-card"><img src="https://i.imgur.com/v8bQMv0.png" alt="InDesign" class="tool-icon" loading="lazy"><span class="tool-name">InDesign</span></div>
+            <div class="tool-card"><img src="https://i.imgur.com/xdGTIiX.png" alt="VS Code" class="tool-icon" loading="lazy"><span class="tool-name">VS Code</span></div>
+          </div>
+          <div class="bio-section">
+            <h2>聯繫我</h2>
+            <p>個人信箱: b20070903@gmail.com<br>學校信箱: mdh217038@mdhs.tc.edu.tw</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery hidden fade-slide">
+        <div class="gallery-filter" id="galleryFilter">
+          <button class="active" data-category="全部">全部</button>
+          <button data-category="Illustrator">Illustrator</button>
+          <button data-category="Photoshop">Photoshop</button>
+          <button data-category="手繪">手繪</button>
+          <button data-category="實作">實作</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content fade-slide">
+        <div class="modal-inner" id="modalInner">
+          <img id="modalImg" class="modal-img" loading="lazy">
+          <div class="modal-text">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+        <button id="closeModal">✕</button>
+      </div>
+    </div>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
